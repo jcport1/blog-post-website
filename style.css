@@ -23,6 +23,12 @@ body {
 
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* repeating code is bad practice so group common code together */
 
 h1, h2 {
@@ -55,4 +61,37 @@ h2 {
 
 .author-text {
     font-size: 22px;
+}
+
+/* Layout */
+
+.container {
+    /* screens are getting larger so we can make wider webpages */
+    width: 1140px;
+    /* center div: margins adjusted automatically according to context of element
+    which is browser window in this case */
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; */
+     /* shorthand for ^ */
+    margin: 20px auto 0 left;
+}
+
+.blog-post {
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+}
+
+.other-posts {
+    width: 25%;
+    float: left;
+}
+
+.author-box {
+
+    padding: 20px;
+    
+    /* border property allows you to control 3 things: border width, line type and color */
+    border-top: 1px solid rgb(142, 133, 133);
 }
