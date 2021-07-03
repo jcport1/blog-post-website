@@ -1,6 +1,17 @@
 /* CSS is written in rules 
 each rule consists of a selector and declarations box */
 
+/* remove default values
+create rules that affect all elements on the webpage using asterisk selector  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
 /* since everything is in the body, rules here will apply to all the content with no defined style
 inheritance: we change properties in body, so children inside body inherit the style
 unless we overide the styles in selector/declarations 
@@ -22,11 +33,13 @@ h1, h2 {
 /* property is color and value is green */
 h1 {
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
 
 h2 {
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 /* Class and ID selectors */
@@ -37,6 +50,7 @@ h2 {
 
 .main-text {
     text-align: justify;
+    margin-bottom: 20px;
 }
 
 .author-text {
