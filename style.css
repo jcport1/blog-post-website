@@ -61,6 +61,9 @@ h2 {
 
 .author-text {
     font-size: 22px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 /* Layout */
@@ -74,7 +77,7 @@ h2 {
     margin-right: auto;
     margin-top: 20px; */
      /* shorthand for ^ */
-    margin: 20px auto 0 left;
+    margin: 20px auto 0 auto;
 }
 
 .blog-post {
@@ -94,4 +97,28 @@ h2 {
     
     /* border property allows you to control 3 things: border width, line type and color */
     border-top: 1px solid rgb(142, 133, 133);
+}
+
+.author-box img {
+
+    /* adjust size and shape of square image */
+    height: 100px;
+    width: 100px;
+    /* make image round */
+    border-radius: 50%;
+    float: left;
+}
+
+/* Other blog posts */
+
+.other {
+    margin-bottom: 40px;
+}
+
+/* HTML5 and CSS3 image */
+
+.blog-post img {
+    /* to main aspect ratio of image make width auto */
+    height: 150px;
+    width: auto;
 }
