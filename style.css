@@ -1,0 +1,44 @@
+/* CSS is written in rules 
+each rule consists of a selector and declarations box */
+
+/* since everything is in the body, rules here will apply to all the content with no defined style
+inheritance: we change properties in body, so children inside body inherit the style
+unless we overide the styles in selector/declarations 
+Global rule */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+
+/* repeating code is bad practice so group common code together */
+
+h1, h2 {
+    color: rgba(28, 189, 117, 0.832);
+
+}
+
+/* property is color and value is green */
+h1 {
+    font-size: 40px;
+}
+
+
+h2 {
+    font-size: 25px;
+}
+
+/* Class and ID selectors */
+
+/* Using ids is not a good practice, because you can only use once
+ It's best to use classes even if we use just once w/ specific name because this might change in future 
+ and you might want to reuse */
+
+.main-text {
+    text-align: justify;
+}
+
+.author-text {
+    font-size: 22px;
+}
