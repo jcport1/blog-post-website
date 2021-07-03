@@ -84,6 +84,7 @@ h2 {
     width: 75%;
     float: left;
     padding-right: 30px;
+    position: relative;
 }
 
 .other-posts {
@@ -121,4 +122,14 @@ h2 {
     /* to main aspect ratio of image make width auto */
     height: 150px;
     width: auto;
+}
+
+/* position element */
+
+.date {
+    position: absolute;
+    /* to put exactly where you want */
+    top: 10px;
+    right: 30px;
+
 }
